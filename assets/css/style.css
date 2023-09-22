@@ -1,3 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-condensed {
+    font-stretch: 62%;
+  }
+}
+
+
+.archivo{
+  font-family: 'Archivo', sans-serif;
+}
+
+.archivo-narrow{
+  font-family: 'Archivo Narrow', sans-serif;
+
+}
+
+.archivo-black{
+  font-family: 'Archivo Black', sans-serif;
+}
+
 /* Reset */
 
 body {

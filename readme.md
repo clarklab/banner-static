@@ -16,6 +16,11 @@ $ npm start
 $ npm run dev
 ```
 
+```bash
+# To add Tailwind CSS processing
+npx tailwindcss -i ./assets/css/style.css -o ./dist/css/style.css --watch & npm run dev
+```
+
 ## Issues
 
 If you have any problems with Sergey, please feel free to file an issue [here](https://github.com/trys/sergey).

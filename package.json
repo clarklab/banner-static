@@ -13,5 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "sergey": "0.0.13"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
   }
 }
