@@ -6,6 +6,9 @@
   .font-condensed {
     font-stretch: 62%;
   }
+  .font-not-condensed {
+    font-stretch: 100%;
+  }
 }
 
 body{
@@ -77,5 +80,35 @@ body{
     transform: translate3d(0, 100%, 0);
     opacity: 0;
   }
+}
+
+
+blockquote{
+  @apply text-4xl archivo font-condensed my-8 font-black;
+}
+cite {
+  @apply not-italic text-base leading-tight font-normal mt-4 block font-not-condensed;
+}
+
+blockquote.bright{
+  @apply bg-[#FF4019] text-white p-8;
+}
+blockquote.bright cite{
+  @apply text-black;
+}
+
+blockquote.sports{
+  @apply bg-black relative text-white p-8 text-6xl uppercase tracking-tight
+}
+blockquote.sports cite{
+  @apply hidden;
+}
+blockquote.sports:before{
+  @apply absolute block bg-[#FF4019] w-8 h-2/3 top-0 left-0 -z-10 rotate-3 origin-top-left;
+  content:" ";
+}
+blockquote.sports:after{
+  @apply absolute block bg-purple-700 w-8 h-2/3 bottom-0 right-0 -z-10 rotate-3 origin-bottom-right;
+  content:" ";
 }
 
