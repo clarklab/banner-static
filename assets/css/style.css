@@ -2,6 +2,104 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "gt-compressed";
+  src: url("../fonts/GT America Compressed Ultra Light.otf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gt-compressed";
+  src: url("../fonts/GT America Compressed Ultra Light Italic.otf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "gt-compressed";
+  src: url("../fonts/GT America Compressed Thin.otf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gt-compressed";
+  src: url(../fonts/GT America Compressed Thin Italic.otf) format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "gt-compressed";
+  src: url(../fonts/GT America Compressed Light.otf) format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gt-compressed";
+  src: url(../fonts/GT America Compressed Light Italic.otf) format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "gt-compressed";
+  src: url(../fonts/GT America Compressed Regular.otf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gt-compressed";
+  src: url(../fonts/GT America Compressed Regular Italic.otf) format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "gt-compressed";
+  src: url(../fonts/GT America Compressed Medium.otf) format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "gt-compressed";
+  src: url(../fonts/GT America Compressed Medium Italic.otf) format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "gt-compressed";
+  src: url(../fonts/GT America Compressed Bold.otf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gt-compressed";
+  src: url(../fonts/GT America Compressed Bold Italic.otf) format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "gt-compressed";
+  src: url(../fonts/GT America Compressed Black.otf) format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gt-compressed";
+  src: url(../fonts/GT America Compressed Black Italic.otf) format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
 @layer utilities {
   .font-condensed {
     font-stretch: 62%;
@@ -16,16 +114,16 @@ body{
 }
 
 .archivo{
-  font-family: 'Archivo', sans-serif;
+  font-family: 'gt-compressed', sans-serif;
 }
 
 .archivo-narrow{
-  font-family: 'Archivo Narrow', sans-serif;
+  font-family: 'gt-compressed', sans-serif;
 
 }
 
 .archivo-black{
-  font-family: 'Archivo Black', sans-serif;
+  font-family: 'gt-compressed', sans-serif;
 }
 
 .charm-container {
