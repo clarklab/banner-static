@@ -1,0 +1,670 @@
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Compressed Ultra Light Italic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Compressed Ultra Light.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Compressed Thin Italic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Compressed Thin.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Compressed Light Italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Compressed Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Compressed Regular Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Compressed Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Compressed Medium Italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Compressed Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Compressed Bold Italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Compressed Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Compressed Black Italic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+    font-stretch: ultra-condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Compressed Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: ultra-condensed;
+}
+
+
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Condensed Ultra Light Italic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Condensed Ultra Light.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Condensed Thin Italic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Condensed Thin.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Condensed Light Italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Condensed Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Condensed Regular Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Condensed Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Condensed Medium Italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Condensed Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Condensed Bold Italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Condensed Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Condensed Black Italic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+    font-stretch: condensed;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Condensed Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: condensed;
+}
+
+
+
+
+
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Ultra Light Italic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Ultra Light.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Thin Italic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Thin.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Light Italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Regular Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Medium Italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Bold Italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Black Italic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Extended Ultra Light Italic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Extended Ultra Light.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Extended Thin Italic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Extended Thin.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Extended Light Italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Extended Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Extended Regular Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Extended Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Extended Medium Italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Extended Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Extended Bold Italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Extended Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Extended Black Italic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+    font-stretch: expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Extended Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: expanded;
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Expanded Ultra Light Italic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+    font-stretch: ultra-expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Expanded Ultra Light.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: ultra-expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Expanded Thin Italic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+    font-stretch: ultra-expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Expanded Thin.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+    font-stretch: ultra-expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Expanded Light Italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    font-stretch: ultra-expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Expanded Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: ultra-expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Expanded Regular Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-stretch: ultra-expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Expanded Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: ultra-expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Expanded Medium Italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+    font-stretch: ultra-expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Expanded Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: ultra-expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Expanded Bold Italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: ultra-expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Expanded Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: ultra-expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Expanded Black Italic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+    font-stretch: ultra-expanded;
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: url('../fonts/GT America Expanded Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: ultra-expanded;
+}
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'GT America Mono';
+    src: url('../fonts/GT America Mono Ultra Light.otf') format('opentype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America Mono';
+    src: url('../fonts/GT America Mono Ultra Light Italic.otf') format('opentype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT America Mono';
+    src: url('../fonts/GT America Mono Thin.otf') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America Mono';
+    src: url('../fonts/GT America Mono Thin Italic.otf') format('opentype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT America Mono';
+    src: url('../fonts/GT America Mono Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America Mono';
+    src: url('../fonts/GT America Mono Light Italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT America Mono';
+    src: url('../fonts/GT America Mono Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America Mono';
+    src: url('../fonts/GT America Mono Regular Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT America Mono';
+    src: url('../fonts/GT America Mono Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America Mono';
+    src: url('../fonts/GT America Mono Medium Italic.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT America Mono';
+    src: url('../fonts/GT America Mono Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America Mono';
+    src: url('../fonts/GT America Mono Bold Italic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'GT America Mono';
+    src: url('../fonts/GT America Mono Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT America Mono';
+    src: url('../fonts/GT America Mono Black Italic.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}

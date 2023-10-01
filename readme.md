@@ -1,26 +1,17 @@
-# Sergey - Netlify
+# Banner Static
 
-Sergey is a tiny lil’ static site generator. It’s a progressive tool designed to site atop your already brilliant HTML. In essence, Sergey is HTML + partials with slots thrown in for good measure.
-
-This is a starter project that'll deploy to Netlify on your behalf. It demonstrates the two key features of Sergey: imports, and slots.
+This build uses Tailwind, PostCSS, and Sergey (with a sprinkle of other things). The overall goal is to provid a STATIC html/css/js build of the new Baltimore Banner front-end, for consumption into React/ARC/partials. Onward!
 
 ## Installation
 
 ```bash
+# Get all the stuff
 $ npm install
 
-# Build the site
-$ npm start
-
-# Run Sergey in dev mode
+# Run everything (Tailwind+PostCSS+Sergey) in dev mode
 $ npm run dev
-```
-
-```bash
-# To add Tailwind CSS processing
-npx tailwindcss -i ./assets/css/style.css -o ./dist/css/style.css --watch & npm run dev
 ```
 
 ## Issues
 
-If you have any problems with Sergey, please feel free to file an issue [here](https://github.com/trys/sergey).
+If you have any problems, please feel free to contact Clark. Also know he's a frotend-end fellow, and might not be able to help with too much command line stuff.
