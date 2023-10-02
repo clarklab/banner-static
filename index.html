@@ -1,17 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-  <sergey-import src="head" />
-  <body class="">
-    <sergey-import src="header" />
+<sergey-import src="head" />
 
     <main class="wrapper p-5 lg:grid lg:grid-cols-3 gap-8">
 
       <section class="mb-12">
-        <h2 class="border-b pb-2 mb-4 uppercase text-sm font-condensed">Layouts</h2>
+        <h2 class="border-b border-black pb-2 mb-4 uppercase text-sm font-condensed">Layouts</h2>
 
         <ul>
           <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
-            <a class="block mb-2 font-bold" href="#">None yet...</a>
+            <a class="block mb-2 font-bold" href="article.html">Article</a>
             <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
           </li>
         </ul>
@@ -20,7 +16,7 @@
 
 
       <section class="mb-12">
-        <h2 class="border-b pb-2 mb-4 uppercase text-sm font-condensed">Basics</h2>
+        <h2 class="border-b border-black pb-2 mb-4 uppercase text-sm font-condensed">Basics</h2>
 
         <ul>
           <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
@@ -37,24 +33,85 @@
       
 
       <section class="mb-12">
-        <h2 class="border-b pb-2 mb-4 uppercase text-sm font-condensed">Components</h2>
+        <h2 class="border-b border-black pb-2 mb-4 uppercase text-sm font-condensed">Components</h2>
 
         <ul>
-          <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
-            <a class="block mb-2 font-bold" href="card-list.html">Card List</a>
-            <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center">1</div>
-          </li>
-          <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
-            <a class="block mb-2 font-bold" href="pullquote.html">Pullquote</a>
-            <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center">3</div>
-          </li>
+
           <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
             <a class="block mb-2 font-bold" href="author-block.html">Author Block</a>
             <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
+            <ul class="submenu hidden">
+            </ul>
           </li>
+
+          <li class="flex flex-col justify-between border-b border-light-gray pb-2 mb-2">
+              <div class="flex justify-between cursor-pointer toggleMenu">
+                <a class="block mb-2 font-bold">Card List</a>
+                <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center">2</div>
+              </div>
+              <ul class="submenu hidden">
+                <li class="mb-1"><a href="card-list.html">↳ Default</a></li>
+                <li class="mb-1"><a href="card-list-row.html">↳ Row</a></li>
+              </ul>
+            </li>
+
+          <li class="flex flex-col justify-between border-b border-light-gray pb-2 mb-2">
+            <div class="flex justify-between cursor-pointer toggleMenu">
+              <a class="block mb-2 font-bold">Collage</a>
+              <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center">3</div>
+            </div>
+            <ul class="submenu hidden">
+              <li class="mb-1"><a href="collage-3-up-vertical.html">↳ 3-up, Vertical</a></li>
+              <li class="mb-1"><a href="collage-3-up-square.html">↳ 3-up, Square</a></li>
+              <li class="mb-1"><a href="collage-2-up-vertical.html">↳ 2-up, Vertical</a></li>
+              <li class="mb-1"><a href="collage-2-up-landscape.html">↳ 2-up, Landscape</a></li>
+            </ul>
+          </li>
+
+          <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
+            <a class="block mb-2 font-bold" href="link-box.html">Link Box</a>
+            <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
+            <ul class="submenu hidden">
+            </ul>
+          </li>
+
+          <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
+            <a class="block mb-2 font-bold" href="paywall-inline.html">Paywall Inline</a>
+            <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
+            <ul class="submenu hidden">
+            </ul>
+          </li>
+
+          <li class="flex flex-col justify-between border-b border-light-gray pb-2 mb-2">
+            <div class="flex justify-between cursor-pointer toggleMenu">
+              <a class="block mb-2 font-bold">Pullquote</a>
+              <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center">3</div>
+            </div>
+            <ul class="submenu hidden">
+              <li class="mb-1"><a href="pullquote.html">↳ Default</a></li>
+              <li class="mb-1"><a href="pullquote-bright.html">↳ Bright</a></li>
+              <li class="mb-1"><a href="pullquote-sports.html">↳ Sports</a></li>
+            </ul>
+          </li>
+
+
         </ul>
 
       </section>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        let toggles = document.querySelectorAll('.toggleMenu');
+
+        toggles.forEach(function(toggle) {
+            toggle.addEventListener('click', function() {
+                let submenu = this.nextElementSibling;
+                submenu.classList.toggle('hidden');
+            });
+        });
+    });
+</script>
 
 
 

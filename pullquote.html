@@ -1,30 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <sergey-import src="head" />
-  <body class="">
-    <sergey-import src="header" />
+<sergey-import src="template">
 
-    <main class="wrapper p-5">
+  <div class="px-4">
 
+    <sergey-import src="pullquote" />
+    <sergey-template name="selector">pullquote</sergey-template>
 
-      <!-- load an HTML file, but pass it a class -->
-      <sergey-import src="blockquote">
-          <sergey-template name="addclass"></sergey-template>
-      </sergey-import>
+  </div>
 
-      <sergey-import src="blockquote">
-          <sergey-template name="addclass">bright</sergey-template>
-      </sergey-import>
-
-      <sergey-import src="blockquote">
-          <sergey-template name="addclass">sports</sergey-template>
-      </sergey-import>
-
-
-      
-      
-    </main>
-
-    <sergey-import src="footer" />
-  </body> 
-</html>
+</sergey-import>
