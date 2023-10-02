@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "sergey",
+    "start": "postcss ./assets/css/style.css -o ./dist/css/style.css & sergey",
     "dev": "postcss ./assets/css/style.css -o ./dist/css/style.css --watch & sergey --watch"
   },
   "keywords": [],
