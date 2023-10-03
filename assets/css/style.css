@@ -39,6 +39,18 @@ body{
   clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%);
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scroller::-webkit-scrollbar {
+    @apply hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scroller {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 .charm-container {
   position: relative;
   width: 200px;
@@ -55,26 +67,35 @@ body{
   justify-content: right;
   background-color: #000;
   color:#fff;
-  transform: translate3d(0, -100%, 0);
-  opacity: 0;
-  animation: swipe 16s ease-in-out infinite; /* Adjusted total animation duration */
+  transform: translateY(-100%);
+  opacity: 1;
+  animation: swipe 8.8s ease-in-out infinite; /* Adjusted total animation duration */
   will-change: transform, opacity;
 }
 
-#subscribe {
-  animation-delay: -12s; /* Added new item with adjusted delay */
+@keyframes swipe {
+  0%, 25% {
+    transform: translateY(0%); /* In view */
+  }
+  27.27%, 100% {
+    transform: translateY(100%); /* Move out of view */
+  }
 }
 
 #date {
-  animation-delay: -8s; /* Adjusted animation delay */
+  animation-delay: 0s;
+}
+
+#subscribe {
+  animation-delay: -2.2s;
 }
 
 #time {
-  animation-delay: -4s; /* Adjusted animation delay */
+  animation-delay: -4.4s;
 }
 
 #weather {
-  animation-delay: 0s; /* No delay needed as it is the first item */
+  animation-delay: -6.6s;
 }
 
 
