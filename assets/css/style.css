@@ -35,6 +35,10 @@ body{
   font-family: "GT America Mono", monospace;
 }
 
+.slant-clip{
+  clip-path: polygon(4px 0%, 100% 0%, calc(100% - 4px) 100%, 0% 100%);
+}
+
 .charm-container {
   position: relative;
   width: 200px;
