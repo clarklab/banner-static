@@ -668,3 +668,7 @@
     font-weight: 900;
     font-style: italic;
 }
+
+.ot-ss03 {
+    font-feature-settings: 'kern' 1, 'ss03' 1;
+}
