@@ -47,6 +47,10 @@ body{
   clip-path: polygon(4px 0%, calc(100% - 4px) 0, 100% 100%, 0% 100%);
 }
 
+.bottom-right-clip{
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 4px), 0% 100%);
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .scroller::-webkit-scrollbar {
     @apply hidden;
@@ -123,25 +127,61 @@ body{
 }
 
 
-blockquote.sports cite{
-  @apply hidden;
-}
-blockquote.sports:before{
-  @apply absolute block bg-[#FF4019] w-8 h-2/3 top-0 left-0 -z-10 rotate-3 origin-top-left;
-  content:" ";
-}
-blockquote.sports:after{
-  @apply absolute block bg-purple-700 w-8 h-2/3 bottom-0 right-0 -z-10 rotate-3 origin-bottom-right;
-  content:" ";
-}
-
 
 /* article body */
 
 .article-body{
-  @apply text-lg px-4 lg:px-0;
+  @apply text-lg lg:px-0;
 
   > * {
-    @apply mb-4
+    @apply mb-4 px-4 max-w-3xl mx-auto
   }
+
+  > p, ul, ol {
+    > a{
+       @apply text-purple-700 underline underline-offset-2 bg-purple-70 hover:text-purple hover:decoration-2;
+      }
+    }
+
+  ul,ol{
+    @apply flex flex-col pl-8 gap-2 divide-y;
+
+    li{
+      @apply pt-2;
+    }
+  }
+
+  ul{
+    @apply list-square marker:text-purple-700;
+  }
+
+  ol{
+    @apply list-decimal marker:text-purple-700 marker:font-bold;
+  }
+
 }
+
+
+/* color stripe gradient stops, as far as I can tell, Tailwind will only allow one hard-stop and we needed more */
+.bg-gradient{
+  background: linear-gradient(
+    -45deg, 
+    theme('colors.gold'),
+    theme('colors.gold') 30%,
+    theme('colors.black') 30%,
+    theme('colors.black') 60%,
+    theme('colors.orange') 60%,
+    theme('colors.orange')
+  )
+  }
+.bg-gradient-flip{
+  background: linear-gradient(
+    -45deg, 
+    theme('colors.orange'),
+    theme('colors.orange') 30%,
+    theme('colors.black') 30%,
+    theme('colors.black') 60%,
+    theme('colors.gold') 60%,
+    theme('colors.gold')
+  )
+  }

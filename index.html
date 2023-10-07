@@ -1,9 +1,13 @@
 <sergey-import src="head" />
 
-    <main class="wrapper p-5 lg:grid lg:grid-cols-3 gap-8">
+    <main class="wrapper p-5 lg:grid lg:grid-cols-4 gap-8">
 
       <section class="mb-12">
-        <h2 class="border-b border-black pb-2 mb-4 uppercase text-sm font-condensed">Layouts</h2>
+        
+        <div class="flex items-center justify-between border-b border-black pb-2 mb-4 ">
+        <h2 class="uppercase text-sm font-condensed">Layouts</h2>
+        <div class="total pr-3 text-light-gray"></div>
+        </div>
 
         <ul>
           <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
@@ -16,7 +20,11 @@
 
 
       <section class="mb-12">
-        <h2 class="border-b border-black pb-2 mb-4 uppercase text-sm font-condensed">Basics</h2>
+        
+        <div class="flex items-center justify-between border-b border-black pb-2 mb-4 ">
+        <h2 class="uppercase text-sm font-condensed">Basics</h2>
+        <div class="total pr-3 text-light-gray"></div>
+        </div>
 
         <ul>
           <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
@@ -27,20 +35,28 @@
             <a class="block mb-2 font-bold" href="colors.html">Colors</a>
             <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
           </li>
+          <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
+            <a class="block mb-2 font-bold" href="article-body.html">Article Body</a>
+            <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
+          </li>
         </ul>
 
       </section>
       
 
       <section class="mb-12">
-        <h2 class="border-b border-black pb-2 mb-4 uppercase text-sm font-condensed">Components</h2>
+
+        <div class="flex items-center justify-between border-b border-black pb-2 mb-4 ">
+        <h2 class="uppercase text-sm font-condensed">Components</h2>
+        <div class="total pr-3 text-light-gray"></div>
+        </div>
 
         <ul>
 
           <li class="flex flex-col justify-between border-b border-light-gray pb-2 mb-2">
               <div class="flex justify-between cursor-pointer toggleMenu">
                 <a class="block mb-2 font-bold">Article Topper</a>
-                <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center">8</div>
+                <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
               </div>
               <ul class="submenu hidden">
                 <li class="mb-1"><a href="article-topper.html">↳ Default</a></li>
@@ -62,9 +78,21 @@
           </li>
 
           <li class="flex flex-col justify-between border-b border-light-gray pb-2 mb-2">
+            <div class="flex justify-between cursor-pointer toggleMenu">
+              <a class="block mb-2 font-bold">Blockquote</a>
+              <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
+            </div>
+            <ul class="submenu hidden">
+              <li class="mb-1"><a href="blockquote.html">↳ Default</a></li>
+              <li class="mb-1"><a href="blockquote-color.html">↳ Color</a></li>
+              <li class="mb-1"><a href="blockquote-long.html">↳ Long</a></li>
+            </ul>
+          </li>
+
+          <li class="flex flex-col justify-between border-b border-light-gray pb-2 mb-2">
               <div class="flex justify-between cursor-pointer toggleMenu">
                 <a class="block mb-2 font-bold">Card List</a>
-                <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center">2</div>
+                <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
               </div>
               <ul class="submenu hidden">
                 <li class="mb-1"><a href="card-list.html">↳ Default</a></li>
@@ -75,7 +103,7 @@
           <li class="flex flex-col justify-between border-b border-light-gray pb-2 mb-2">
             <div class="flex justify-between cursor-pointer toggleMenu">
               <a class="block mb-2 font-bold">Collage</a>
-              <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center">4</div>
+              <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
             </div>
             <ul class="submenu hidden">
               <li class="mb-1"><a href="collage-3-up-vertical.html">↳ 3-up, Vertical</a></li>
@@ -85,10 +113,14 @@
             </ul>
           </li>
 
-          <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
-            <a class="block mb-2 font-bold" href="divider.html">Divider</a>
-            <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
+          <li class="flex flex-col justify-between border-b border-light-gray pb-2 mb-2">
+            <div class="flex justify-between cursor-pointer toggleMenu">
+              <a class="block mb-2 font-bold">Divider</a>
+              <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
+            </div>
             <ul class="submenu hidden">
+              <li class="mb-1"><a href="divider.html">↳ Default</a></li>
+              <li class="mb-1"><a href="divider-color.html">↳ Color Strip</a></li>
             </ul>
           </li>
 
@@ -101,13 +133,26 @@
 
           <li class="flex flex-col justify-between border-b border-light-gray pb-2 mb-2">
             <div class="flex justify-between cursor-pointer toggleMenu">
-              <a class="block mb-2 font-bold">Pullquote</a>
-              <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center">3</div>
+              <a class="block mb-2 font-bold">Media Item</a>
+              <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
             </div>
             <ul class="submenu hidden">
-              <li class="mb-1"><a href="pullquote.html">↳ Default</a></li>
-              <li class="mb-1"><a href="pullquote-bright.html">↳ Bright</a></li>
+              <li class="mb-1"><a href="media-item.html">↳ Default</a></li>
+              <li class="mb-1"><a href="media-item-wide.html">↳ Wide</a></li>
+              <li class="mb-1"><a href="media-item-full.html">↳ Full</a></li>
+            </ul>
+          </li>
+
+          <li class="flex flex-col justify-between border-b border-light-gray pb-2 mb-2">
+            <div class="flex justify-between cursor-pointer toggleMenu">
+              <a class="block mb-2 font-bold">Pullquote</a>
+              <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
+            </div>
+            <ul class="submenu hidden">
+              <li class="mb-1"><a href="pullquote-culture.html">↳ Culture</a></li>
+              <li class="mb-1"><a href="pullquote-culture-color-strip.html">↳ Culture Color Strip</a></li>
               <li class="mb-1"><a href="pullquote-sports.html">↳ Sports</a></li>
+              <li class="mb-1"><a href="pullquote-sports-black.html">↳ Sports Black</a></li>
             </ul>
           </li>
 
@@ -117,14 +162,18 @@
       </section>
 
       <section class="mb-12">
-        <h2 class="border-b border-black pb-2 mb-4 uppercase text-sm font-condensed">Marketing</h2>
+
+        <div class="flex items-center justify-between border-b border-black pb-2 mb-4 ">
+        <h2 class="uppercase text-sm font-condensed">Marketing</h2>
+        <div class="total pr-3 text-light-gray"></div>
+        </div>
 
         <ul>
 
           <li class="flex flex-col justify-between border-b border-light-gray pb-2 mb-2">
               <div class="flex justify-between cursor-pointer toggleMenu">
                 <a class="block mb-2 font-bold">Offer</a>
-                <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center">2</div>
+                <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
               </div>
               <ul class="submenu hidden">
                 <li class="mb-1"><a href="offer.html">↳ Offer</a></li>
@@ -154,7 +203,33 @@
                 submenu.classList.toggle('hidden');
             });
         });
+
+    document.querySelectorAll('.toggleMenu').forEach(menu => {
+        const submenuItems = menu.nextElementSibling.children.length;
+        const countDiv = menu.querySelector('.count');
+        if (submenuItems > 0) {
+            countDiv.textContent = submenuItems;
+        }
     });
+
+    document.querySelectorAll('.total').forEach(totalDiv => {
+        const parentSection = totalDiv.closest('section');
+        let totalCount = 0;
+        parentSection.querySelectorAll('.count').forEach(countDiv => {
+            totalCount += parseInt(countDiv.textContent) || 1;
+        });
+        totalDiv.textContent = totalCount;
+    });
+
+
+
+
+
+
+
+
+    });
+
 </script>
 
 

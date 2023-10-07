@@ -672,3 +672,7 @@
 .ot-ss03 {
     font-feature-settings: 'kern' 1, 'ss03' 1;
 }
+
+.font-caslon{
+    font-family: 'Libre Caslon Text', serif;
+}

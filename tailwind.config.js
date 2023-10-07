@@ -20,9 +20,18 @@ module.exports = {
       'white': '#ffffff',
       'yellow': '#feffc9',
       'purple': '#7000ff',
+      'purple-70': '#F5EDFF',
+      'purple-100': '#F1E5FF',
       'purple-700': '#3c0088',
       'purple-900': '#270b4a',
       'gold': "#FFC700"
+    },
+    listStyleType: {
+      none: 'none',
+      disc: 'disc',
+      decimal: 'decimal',
+      square: 'square',
+      roman: 'upper-roman'
     },
     extend: {
         borderColor: {
