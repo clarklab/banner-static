@@ -51,6 +51,16 @@ body{
   clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 4px), 0% 100%);
 }
 
+.bg-black{
+  @apply text-white;
+  .from-white{
+    @apply from-black;
+  }
+  .border-white{
+    @apply border-black;
+  }
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .scroller::-webkit-scrollbar {
     @apply hidden;

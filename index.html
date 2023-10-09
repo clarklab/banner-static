@@ -11,7 +11,15 @@
 
         <ul>
           <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
-            <a class="block mb-2 font-bold" href="article.html">Article</a>
+            <a class="block mb-2 font-bold" href="layout-article.html">Article</a>
+            <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
+          </li>
+          <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
+            <a class="block mb-2 font-bold" href="layout-article-feature.html">Article Feature</a>
+            <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
+          </li>
+          <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
+            <a class="block mb-2 font-bold" href="layout-article-feature-black.html">Article Feature Black</a>
             <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
           </li>
         </ul>
@@ -35,10 +43,20 @@
             <a class="block mb-2 font-bold" href="colors.html">Colors</a>
             <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
           </li>
-          <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
-            <a class="block mb-2 font-bold" href="article-body.html">Article Body</a>
-            <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
-          </li>
+          <li class="flex flex-col justify-between border-b border-light-gray pb-2 mb-2">
+              <div class="flex justify-between cursor-pointer toggleMenu">
+                <a class="block mb-2 font-bold">Article Body</a>
+                <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
+              </div>
+              <ul class="submenu hidden">
+                <li class="mb-1"><a href="article-body.html">↳ Paragraph</a></li>
+                <li class="mb-1"><a href="article-body.html">↳ Headings</a></li>
+                <li class="mb-1"><a href="article-body.html">↳ Link</a></li>
+                <li class="mb-1"><a href="article-body.html">↳ Unordered List</a></li>
+                <li class="mb-1"><a href="article-body.html">↳ Ordered List</a></li>
+                <li class="mb-1"><a href="article-body.html">↳ Media Item</a></li>
+              </ul>
+            </li>
         </ul>
 
       </section>
@@ -67,8 +85,17 @@
                 <li class="mb-1"><a href="article-topper-full-left.html">↳ Full Art, Left</a></li>
                 <li class="mb-1"><a href="article-topper-none.html">↳ No Art</a></li>
                 <li class="mb-1"><a href="article-topper-none-left.html">↳ No Art, Left</a></li>
+                <li class="mb-1"><a href="article-topper-feature.html">↳ Feature</a></li>
+                <li class="mb-1"><a href="article-topper-feature-black.html">↳ Feature, Black</a></li>
               </ul>
             </li>
+
+          <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
+            <a class="block mb-2 font-bold" href="attribution-date.html">Attribution + Date</a>
+            <div class="count empty:hidden rounded-full border border-light-gray inline-block px-3 leading-none flex items-center"></div>
+            <ul class="submenu hidden">
+            </ul>
+          </li>
 
           <li class="flex justify-between border-b border-light-gray pb-2 mb-2">
             <a class="block mb-2 font-bold" href="author-block.html">Author Block</a>

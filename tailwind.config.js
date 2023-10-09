@@ -36,6 +36,9 @@ module.exports = {
     extend: {
         borderColor: {
             DEFAULT: '#d9d9d9',
+        },
+        height: {
+          'screen-bars': 'calc(100vh - 90px)',
         }
      }
   },
