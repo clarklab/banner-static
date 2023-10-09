@@ -149,7 +149,7 @@ body{
 
   > p, ul, ol {
     > a{
-       @apply text-purple-700 underline underline-offset-2 bg-purple-70 hover:text-purple hover:decoration-2;
+       @apply text-purple-700 underline underline-offset-2 bg-purple-70 hover:text-purple;
       }
     }
 
