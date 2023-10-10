@@ -43,7 +43,10 @@ module.exports = {
         },
         boxShadow: {
           'inner': 'inset 0 0 8px 0 rgb(0 0 0 / 0.05)',
-        }
+        },
+        aspectRatio: {
+          'video-vertical': '9 / 14',
+        },
      }
   },
   plugins: [],

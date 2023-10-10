@@ -194,3 +194,8 @@ body{
     theme('colors.gold')
   )
   }
+
+  /* documentation styles, only for this repo */
+  .docs{
+    @apply bg-yellow mb-4 p-4;
+  }

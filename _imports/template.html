@@ -1,13 +1,17 @@
 <sergey-import src="head" />
 
-  <sergey-slot />
+  <sergey-slot name="source" />
 
   <div class="source mt-16 px-6 border-t border-light-gray pt-12">
+
+    <sergey-slot />
+
+    
     <h4 class="mb-2">Source Code</h4>
-  <textarea class="w-full h-96 border border-light-gray p-6 text-gray-700 bg-light text-gray rounded-lg mb-16"><sergey-slot /></textarea>
+  <textarea class="w-full h-96 border border-light-gray p-6 text-gray-700 bg-light text-gray rounded-lg mb-16"><sergey-slot name="source" /></textarea>
 
   <h4 class="mb-2">Selector</h4>
-  <input class="w-full border border-light-gray p-6 text-gray-700 bg-light text-gray rounded-lg mb-16" type="" name="" value='<sergey-slot name="selector" />'>
+  <input class="w-full border border-light-gray p-6 text-gray-700 bg-light text-gray rounded-lg mb-16" type="" name="" value='<sergey-slot name="selector">n/a</sergey-slot>'>
 
   </div>
 

@@ -1383,6 +1383,18 @@ video {
     aspect-ratio: 16 / 9;
 }
 
+.aspect-video-vertical {
+    aspect-ratio: 9 / 14;
+}
+
+.h-0 {
+    height: 0px;
+}
+
+.h-0\.5 {
+    height: 0.125rem;
+}
+
 .h-1 {
     height: 0.25rem;
 }
@@ -1479,6 +1491,10 @@ video {
     width: 100%;
 }
 
+.\!max-w-3xl {
+    max-width: 48rem !important;
+}
+
 .\!max-w-5xl {
     max-width: 64rem !important;
 }
@@ -1506,10 +1522,6 @@ video {
 
 .max-w-sm {
     max-width: 24rem;
-}
-
-.\!max-w-3xl {
-    max-width: 48rem !important;
 }
 
 .flex-none {
@@ -1639,11 +1651,6 @@ video {
     border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 
-.divide-black > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgb(0 0 0 / var(--tw-divide-opacity));
-}
-
 .overflow-hidden {
     overflow: hidden;
 }
@@ -1684,11 +1691,6 @@ video {
 .border-y {
     border-top-width: 1px;
     border-bottom-width: 1px;
-}
-
-.border-x {
-    border-left-width: 1px;
-    border-right-width: 1px;
 }
 
 .border-b {
@@ -1859,6 +1861,10 @@ video {
        object-position: left;
 }
 
+.p-1 {
+    padding: 0.25rem;
+}
+
 .p-12 {
     padding: 3rem;
 }
@@ -1881,10 +1887,6 @@ video {
 
 .p-8 {
     padding: 2rem;
-}
-
-.p-1 {
-    padding: 0.25rem;
 }
 
 .\!px-0 {
@@ -1935,16 +1937,6 @@ video {
 .py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-}
-
-.\!px-2 {
-    padding-left: 0.5rem !important;
-    padding-right: 0.5rem !important;
-}
-
-.\!px-4 {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
 }
 
 .pb-12 {
@@ -2170,10 +2162,6 @@ video {
 
 .decoration-orange {
     text-decoration-color: #ff4019;
-}
-
-.decoration-neon-yellow {
-    text-decoration-color: #faff00;
 }
 
 .decoration-1 {
@@ -2456,6 +2444,15 @@ body {
   )
   }
 
+/* documentation styles, only for this repo */
+
+.docs {
+    margin-bottom: 1rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(254 255 201 / var(--tw-bg-opacity));
+    padding: 1rem;
+}
+
 .empty\:hidden:empty {
     display: none;
 }
@@ -2615,14 +2612,14 @@ body {
         background-color: rgb(255 255 255 / var(--tw-bg-opacity));
     }
 
-    .lg\:px-0 {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
     .lg\:\!px-4 {
         padding-left: 1rem !important;
         padding-right: 1rem !important;
+    }
+
+    .lg\:px-0 {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .lg\:pl-16 {
@@ -2652,4 +2649,18 @@ body {
         --tw-text-opacity: 1;
         color: rgb(0 0 0 / var(--tw-text-opacity));
     }
+}
+
+.\[\&\:has\(strong\)\]\:text-5xl:has(strong) {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.\[\&\:has\(strong\)\]\:font-light:has(strong) {
+    font-weight: 300;
+}
+
+.\[\&\:has\(strong\)\]\:text-orange:has(strong) {
+    --tw-text-opacity: 1;
+    color: rgb(255 64 25 / var(--tw-text-opacity));
 }
