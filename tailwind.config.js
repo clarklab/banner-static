@@ -40,6 +40,9 @@ module.exports = {
         height: {
           'screen-bars': 'calc(100vh - 90px)',
           'half-screen': 'calc(50vh - 20px)',
+        },
+        boxShadow: {
+          'inner': 'inset 0 0 8px 0 rgb(0 0 0 / 0.05)',
         }
      }
   },
