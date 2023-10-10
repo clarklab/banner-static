@@ -2,8 +2,8 @@
 module.exports = {
   mode: 'jit',
   content: [
-    "./_imports/*.{html,js,jsx}",
-    "./*.{html,js,jsx}"
+    "./_imports/*.{html,js}",
+    "./*.{html,js}"
     ],
   theme: {
     colors: {
@@ -39,6 +39,7 @@ module.exports = {
         },
         height: {
           'screen-bars': 'calc(100vh - 90px)',
+          'half-screen': 'calc(50vh - 20px)',
         }
      }
   },

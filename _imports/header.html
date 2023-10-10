@@ -1,32 +1,38 @@
 <header role="banner" class="bg-black text-white">
-  <nav class="wrapper gt font-normal font-condensed px-4 flex justify-between items-center">
-   <div class="flex gap-1 items-center"><a class="inline-block" href="index.html"><img src="assets/images/logo-wordmark.svg" width="200"></a><span class="text-gray">.dev</span></div>
 
-   <div class="charm-container">
-    <div class="charm-item" id="date">Wed, Sep 27</div>
-    <div class="charm-item" id="subscribe"><a href="#" class="underline decoration-1 underline-offset-2 decoration-orange font-normal">Subscribe for $1</a></div>
-    <div class="charm-item" id="time"><span class="material-symbols-sharp mr-2 opacity-50 text-base">sports_football</span> Bal 29 &nbsp; Tex 9</div>
-    <div class="charm-item" id="weather"><span class="material-symbols-sharp mr-1 opacity-50 text-base">wb_sunny</span> 81°</div>
-  </div>
+  <nav class="wrapper gt font-normal px-4 flex justify-between items-center lg:hidden">
+   <a class="inline-block" href="index.html"><img src="assets/images/logo-wordmark.svg" width="200"></a>
+
+   <sergey-import src="charm" />
 
   </nav>
 
-  <nav class="bottom fixed z-50 bg-white bottom-0 left-0 right-0 flex items-center gap-4 justify-between">
+  <nav class="bottom fixed z-50 bg-white bottom-0 lg:bottom-auto lg:top-0 left-0 right-0 flex items-center gap-4 justify-between">
     
     <div class="logo w-14 h-14 bg-black flex items-center justify-center flex-none">
       <a href="index.html"><img src="assets/images/logo-character.svg" width="22"></a>
     </div>
 
-    <div class="cta flex-none">
-      <a href="#" class="block leading-none text-black font-condensed underline decoration-1 decoration-orange hover:decoration-purple underline underline-offset-2 font-medium">Subscribe for $1</a>
+    <a class="hidden lg:inline-block lg:flex-grow" href="index.html"><img src="assets/images/logo-wordmark-black.svg" width="200"></a>
+
+    <div class="hidden lg:inline-block">
+    <sergey-import src="charm" />
     </div>
 
-    <div class="icons flex flex-grow justify-end px-2 gap-2">
+    <div class="cta flex-none">
+      <a href="#" class="block leading-none text-black underline decoration-1 decoration-orange hover:decoration-purple underline underline-offset-2">Subscribe for $1</a>
+    </div>
+
+    <div class="icons flex flex-grow lg:flex-none justify-end px-2 gap-2">
       <a href="#" class="px-2 py-0.5 text-black border-l pl-6">
-        <span class="material-symbols-sharp leading-none text-2xl">person</span>
+        <span class="material-symbols-sharp leading-none text-2xl inline-block pt-2">person</span>
       </a>
       <a href="index.html" class="px-2 py-0.5 text-black">
-        <span class="material-symbols-sharp leading-none text-2xl">apps</span>
+        <span class="inline-block pt-2">
+        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8.06999 18.9999C7.33666 18.9999 6.70888 18.7388 6.18666 18.2165C5.66443 17.6943 5.40332 17.0665 5.40332 16.3332C5.40332 15.5999 5.66443 14.9721 6.18666 14.4499C6.70888 13.9276 7.33666 13.6665 8.06999 13.6665C8.80333 13.6665 9.43111 13.9276 9.95333 14.4499C10.4756 14.9721 10.7367 15.5999 10.7367 16.3332C10.7367 17.0665 10.4756 17.6943 9.95333 18.2165C9.43111 18.7388 8.80333 18.9999 8.06999 18.9999ZM16.07 18.9999C15.3367 18.9999 14.7089 18.7388 14.1867 18.2165C13.6645 17.6943 13.4033 17.0665 13.4033 16.3332C13.4033 15.5999 13.6645 14.9721 14.1867 14.4499C14.7089 13.9276 15.3367 13.6665 16.07 13.6665C16.8033 13.6665 17.4311 13.9276 17.9534 14.4499C18.4756 14.9721 18.7367 15.5999 18.7367 16.3332C18.7367 17.0665 18.4756 17.6943 17.9534 18.2165C17.4311 18.7388 16.8033 18.9999 16.07 18.9999ZM8.06999 10.9999C7.33666 10.9999 6.70888 10.7387 6.18666 10.2165C5.66443 9.69429 5.40332 9.06651 5.40332 8.33318C5.40332 7.59984 5.66443 6.97206 6.18666 6.44984C6.70888 5.92762 7.33666 5.6665 8.06999 5.6665C8.80333 5.6665 9.43111 5.92762 9.95333 6.44984C10.4756 6.97206 10.7367 7.59984 10.7367 8.33318C10.7367 9.06651 10.4756 9.69429 9.95333 10.2165C9.43111 10.7387 8.80333 10.9999 8.06999 10.9999ZM16.07 10.9999C15.3367 10.9999 14.7089 10.7387 14.1867 10.2165C13.6645 9.69429 13.4033 9.06651 13.4033 8.33318C13.4033 7.59984 13.6645 6.97206 14.1867 6.44984C14.7089 5.92762 15.3367 5.6665 16.07 5.6665C16.8033 5.6665 17.4311 5.92762 17.9534 6.44984C18.4756 6.97206 18.7367 7.59984 18.7367 8.33318C18.7367 9.06651 18.4756 9.69429 17.9534 10.2165C17.4311 10.7387 16.8033 10.9999 16.07 10.9999Z" fill="black"/>
+        </svg>
+        </span>
       </a>
     </div>
   </nav>

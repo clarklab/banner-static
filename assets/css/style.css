@@ -87,7 +87,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: right;
-  background-color: #000;
   color:#fff;
   transform: translateY(-100%);
   opacity: 1;
