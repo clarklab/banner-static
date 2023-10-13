@@ -1,18 +1,67 @@
-<div class="charm-container lg:mr-4">
+<div class="charm-container scroller h-10 overflow-y-scroll snap-y snap-mandatory lg:mr-4">
 
-    <div class="charm-item relative pl-4 bg-black lg:bg-white lg:text-black hidden" id="date">Wed, Sep 27</div>
+    <div class="charm-item snap-center snap-always h-10 leading-10 pl-6 text-right relative pl-4 bg-black lg:bg-white lg:text-black" id="date">Wed, Sep 27</div>
 
-    <div class="charm-item relative pl-4 bg-black lg:bg-white lg:text-black" id="subscribe">
-        <div class="hidden lg:block"><a href="#" class=""><span class="absolute -translate-x-full pr-2 material-symbols-sharp mr-2 opacity-50 text-sm pt-1">sports_baseball</span> Game @ 7pm</a></div>
+    <div class="charm-item snap-center snap-always h-10 leading-10 pl-6 text-right relative pl-4 bg-black lg:bg-white lg:text-black" id="subscribe">
+        <div class="hidden lg:block"><a href="#" class=""><span class="absolute -translate-x-full pr-2 material-symbols-sharp mr-2 opacity-50 text-sm top-1/2 -translate-y-1/2">sports_baseball</span> Game @ 7pm</a></div>
         <div class="block lg:hidden"><a href="#" class="underline decoration-1 underline-offset-2 decoration-orange">Get the App</a></div>
     </div>
 
-    <div class="charm-item relative pl-4 bg-black lg:bg-white lg:text-black" id="time">
-        <a href="#" class="inline-block leading-none"><span class="absolute -translate-x-full pr-2 material-symbols-sharp mr-2 opacity-50 text-sm">sports_football</span> Bal 29 &nbsp;Tex 9</a>
+    <div class="charm-item snap-center snap-always h-10 leading-10 pl-6 text-right relative pl-4 bg-black lg:bg-white lg:text-black" id="time">
+        <a href="#" class="inline-block leading-none"><span class="absolute -translate-x-full pr-2 material-symbols-sharp mr-2 opacity-50 text-sm top-1/2 -translate-y-1/2">sports_football</span> Bal 29 &nbsp;Tex 9</a>
     </div>
 
-    <div class="charm-item relative pl-4 bg-black lg:bg-white lg:text-black" id="weather">
-        <a href="#" class="inline-block leading-none"><span class="absolute -translate-x-full pr-2 material-symbols-sharp mr-1 opacity-50 text-sm">wb_sunny</span> 81°</a>
+    <div class="charm-item snap-center snap-always h-10 leading-10 pl-6 text-right relative pl-4 bg-black lg:bg-white lg:text-black" id="weather">
+        <a href="#" class="inline-block leading-none"><span class="absolute -translate-x-full pr-2 material-symbols-sharp mr-1 opacity-50 text-sm top-1/2 -translate-y-1/2">wb_sunny</span> 81°</a>
     </div>
+
+    <!-- this is a dupe of the first item, to allow seamless looping -->
+    <div class="charm-item snap-center snap-always h-10 leading-10 pl-6 text-right relative pl-4 bg-black lg:bg-white lg:text-black" id="date">Wed, Sep 27</div>
 
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    let containers = document.querySelectorAll('.charm-container');
+
+    containers.forEach(function(container) {
+        let items = container.querySelectorAll('.charm-item');
+        let currentIndex = items.length - 1; // Start at the last item.
+
+        if (items.length <= 1) { // If there's only one item, no scrolling.
+            return;
+        }
+
+        // Initial scrollTo to position it at the last item
+        container.scrollTop = items[currentIndex].offsetTop;
+
+        let instantJumpTimeout;
+
+        function scrollItem() {
+            currentIndex--;
+
+            if (currentIndex < 0) {
+                // Reset to the last item.
+                currentIndex = items.length - 1;
+                container.scrollTop = items[currentIndex].offsetTop; // Instantly jump to the last item.
+                // Start an instant jump for the first item without waiting 3 seconds.
+                instantJumpTimeout = setTimeout(scrollItem, 0); 
+                return;
+            }
+
+            let targetPosition = items[currentIndex].offsetTop;
+            container.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+
+            // If we've reached the second item in the list after our instant jump, we clear the timeout.
+            if (currentIndex === items.length - 2) {
+                clearTimeout(instantJumpTimeout);
+            }
+        }
+
+        setInterval(scrollItem, 3000);
+    });
+});
+</script>

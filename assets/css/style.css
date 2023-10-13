@@ -76,61 +76,6 @@ body{
     scrollbar-width: none;  /* Firefox */
 }
 
-.charm-container {
-  position: relative;
-  width: 200px;
-  height: 35px;
-  overflow: hidden;
-}
-
-.charm-item {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  color:#fff;
-  transform: translateY(-100%);
-  opacity: 1;
-  animation: swipe 8.8s ease-in-out infinite; /* Adjusted total animation duration */
-  will-change: transform, opacity;
-}
-
-#date {
-  animation-delay: 0s;
-}
-
-#subscribe {
-  animation-delay: -2.2s;
-}
-
-#time {
-  animation-delay: -4.4s;
-}
-
-#weather {
-  animation-delay: -6.6s;
-}
-
-
-@keyframes swipe {
-  0%, 100% {
-    transform: translate3d(0, -100%, 0);
-    opacity: 0;
-  }
-  6.25%, 25% { /* Adjusted for faster transition */
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-  31.25%, 50% { /* Adjusted for faster transition */
-    transform: translate3d(0, 100%, 0);
-    opacity: 0;
-  }
-}
-
-
-
 /* article body */
 
 .article-body{
