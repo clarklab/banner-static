@@ -259,112 +259,112 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Standard-Ultra-Light-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Standard-Ultra-Light-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Standard-Ultra-Light-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Standard-Ultra-Light-Italic.woff') format('woff');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Standard-Ultra-Light.woff') format('woff'),
-         url('../fonts/GT-America-Standard-Ultra-Light.woff2') format('woff2');
+    src: url('../fonts/GT-America-Standard-Ultra-Light.woff2') format('woff2'),
+         url('../fonts/GT-America-Standard-Ultra-Light.woff') format('woff');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Standard-Thin-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Standard-Thin-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Standard-Thin-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Standard-Thin-Italic.woff') format('woff');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Standard-Thin.woff') format('woff'),
-         url('../fonts/GT-America-Standard-Thin.woff2') format('woff2');
+    src: url('../fonts/GT-America-Standard-Thin.woff2') format('woff2'),
+         url('../fonts/GT-America-Standard-Thin.woff') format('woff');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Standard-Light-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Standard-Light-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Standard-Light-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Standard-Light-Italic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Standard-Light.woff') format('woff'),
-         url('../fonts/GT-America-Standard-Light.woff2') format('woff2');
+    src: url('../fonts/GT-America-Standard-Light.woff2') format('woff2'),
+         url('../fonts/GT-America-Standard-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Standard-Regular-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Standard-Regular-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Standard-Regular-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Standard-Regular-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Standard-Regular.woff') format('woff'),
-         url('../fonts/GT-America-Standard-Regular.woff2') format('woff2');
+    src: url('../fonts/GT-America-Standard-Regular.woff2') format('woff2'),
+         url('../fonts/GT-America-Standard-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Standard-Medium-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Standard-Medium-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Standard-Medium-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Standard-Medium-Italic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Standard-Medium.woff') format('woff'),
-         url('../fonts/GT-America-Standard-Medium.woff2') format('woff2');
+    src: url('../fonts/GT-America-Standard-Medium.woff2') format('woff2'),
+         url('../fonts/GT-America-Standard-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Standard-Bold-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Standard-Bold-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Standard-Bold-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Standard-Bold-Italic.woff') format('woff');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Standard-Bold.woff') format('woff'),
-         url('../fonts/GT-America-Standard-Bold.woff2') format('woff2');
+    src: url('../fonts/GT-America-Standard-Bold.woff2') format('woff2'),
+         url('../fonts/GT-America-Standard-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Standard-Black-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Standard-Black-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Standard-Black-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Standard-Black-Italic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Standard-Black.woff') format('woff'),
-         url('../fonts/GT-America-Standard-Black.woff2') format('woff2');
+    src: url('../fonts/GT-America-Standard-Black.woff2') format('woff2'),
+         url('../fonts/GT-America-Standard-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
@@ -373,8 +373,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Extended-Ultra-Light-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Extended-Ultra-Light-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Extended-Ultra-Light-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Extended-Ultra-Light-Italic.woff') format('woff');
     font-weight: 100;
     font-style: italic;
     font-stretch: expanded;
@@ -382,8 +382,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Extended-Ultra-Light.woff') format('woff'),
-         url('../fonts/GT-America-Extended-Ultra-Light.woff2') format('woff2');
+    src: url('../fonts/GT-America-Extended-Ultra-Light.woff2') format('woff2'),
+         url('../fonts/GT-America-Extended-Ultra-Light.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-stretch: expanded;
@@ -391,8 +391,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Extended-Thin-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Extended-Thin-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Extended-Thin-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Extended-Thin-Italic.woff') format('woff');
     font-weight: 200;
     font-style: italic;
     font-stretch: expanded;
@@ -400,8 +400,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Extended-Thin.woff') format('woff'),
-         url('../fonts/GT-America-Extended-Thin.woff2') format('woff2');
+    src: url('../fonts/GT-America-Extended-Thin.woff2') format('woff2'),
+         url('../fonts/GT-America-Extended-Thin.woff') format('woff');
     font-weight: 200;
     font-style: normal;
     font-stretch: expanded;
@@ -409,8 +409,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Extended-Light-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Extended-Light-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Extended-Light-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Extended-Light-Italic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-stretch: expanded;
@@ -418,8 +418,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Extended-Light.woff') format('woff'),
-         url('../fonts/GT-America-Extended-Light.woff2') format('woff2');
+    src: url('../fonts/GT-America-Extended-Light.woff2') format('woff2'),
+         url('../fonts/GT-America-Extended-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-stretch: expanded;
@@ -427,8 +427,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Extended-Regular-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Extended-Regular-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Extended-Regular-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Extended-Regular-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
     font-stretch: expanded;
@@ -436,8 +436,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Extended-Regular.woff') format('woff'),
-         url('../fonts/GT-America-Extended-Regular.woff2') format('woff2');
+    src: url('../fonts/GT-America-Extended-Regular.woff2') format('woff2'),
+         url('../fonts/GT-America-Extended-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-stretch: expanded;
@@ -445,8 +445,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Extended-Medium-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Extended-Medium-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Extended-Medium-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Extended-Medium-Italic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-stretch: expanded;
@@ -454,8 +454,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Extended-Medium.woff') format('woff'),
-         url('../fonts/GT-America-Extended-Medium.woff2') format('woff2');
+    src: url('../fonts/GT-America-Extended-Medium.woff2') format('woff2'),
+         url('../fonts/GT-America-Extended-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-stretch: expanded;
@@ -463,8 +463,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Extended-Bold-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Extended-Bold-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Extended-Bold-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Extended-Bold-Italic.woff') format('woff');
     font-weight: 700;
     font-style: italic;
     font-stretch: expanded;
@@ -472,8 +472,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Extended-Bold.woff') format('woff'),
-         url('../fonts/GT-America-Extended-Bold.woff2') format('woff2');
+    src: url('../fonts/GT-America-Extended-Bold.woff2') format('woff2'),
+         url('../fonts/GT-America-Extended-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-stretch: expanded;
@@ -481,8 +481,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Extended-Black-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Extended-Black-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Extended-Black-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Extended-Black-Italic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
     font-stretch: expanded;
@@ -490,8 +490,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Extended-Black.woff') format('woff'),
-         url('../fonts/GT-America-Extended-Black.woff2') format('woff2');
+    src: url('../fonts/GT-America-Extended-Black.woff2') format('woff2'),
+         url('../fonts/GT-America-Extended-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-stretch: expanded;
@@ -501,8 +501,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Expanded-Ultra-Light-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Expanded-Ultra-Light-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Expanded-Ultra-Light-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Expanded-Ultra-Light-Italic.woff') format('woff');
     font-weight: 100;
     font-style: italic;
     font-stretch: ultra-expanded;
@@ -510,8 +510,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Expanded-Ultra-Light.woff') format('woff'),
-         url('../fonts/GT-America-Expanded-Ultra-Light.woff2') format('woff2');
+    src: url('../fonts/GT-America-Expanded-Ultra-Light.woff2') format('woff2'),
+         url('../fonts/GT-America-Expanded-Ultra-Light.woff') format('woff');
     font-weight: 100;
     font-style: normal;
     font-stretch: ultra-expanded;
@@ -519,8 +519,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Expanded-Thin-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Expanded-Thin-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Expanded-Thin-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Expanded-Thin-Italic.woff') format('woff');
     font-weight: 200;
     font-style: italic;
     font-stretch: ultra-expanded;
@@ -528,8 +528,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Expanded-Thin.woff') format('woff'),
-         url('../fonts/GT-America-Expanded-Thin.woff2') format('woff2');
+    src: url('../fonts/GT-America-Expanded-Thin.woff2') format('woff2'),
+         url('../fonts/GT-America-Expanded-Thin.woff') format('woff');
     font-weight: 200;
     font-style: normal;
     font-stretch: ultra-expanded;
@@ -537,8 +537,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Expanded-Light-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Expanded-Light-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Expanded-Light-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Expanded-Light-Italic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
     font-stretch: ultra-expanded;
@@ -546,8 +546,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Expanded-Light.woff') format('woff'),
-         url('../fonts/GT-America-Expanded-Light.woff2') format('woff2');
+    src: url('../fonts/GT-America-Expanded-Light.woff2') format('woff2'),
+         url('../fonts/GT-America-Expanded-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
     font-stretch: ultra-expanded;
@@ -555,8 +555,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Expanded-Regular-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Expanded-Regular-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Expanded-Regular-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Expanded-Regular-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
     font-stretch: ultra-expanded;
@@ -564,8 +564,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Expanded-Regular.woff') format('woff'),
-         url('../fonts/GT-America-Expanded-Regular.woff2') format('woff2');
+    src: url('../fonts/GT-America-Expanded-Regular.woff2') format('woff2'),
+         url('../fonts/GT-America-Expanded-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
     font-stretch: ultra-expanded;
@@ -573,8 +573,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Expanded-Medium-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Expanded-Medium-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Expanded-Medium-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Expanded-Medium-Italic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
     font-stretch: ultra-expanded;
@@ -582,8 +582,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Expanded-Medium.woff') format('woff'),
-         url('../fonts/GT-America-Expanded-Medium.woff2') format('woff2');
+    src: url('../fonts/GT-America-Expanded-Medium.woff2') format('woff2'),
+         url('../fonts/GT-America-Expanded-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
     font-stretch: ultra-expanded;
@@ -591,8 +591,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Expanded-Bold-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Expanded-Bold-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Expanded-Bold-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Expanded-Bold-Italic.woff') format('woff');
     font-weight: 700;
     font-style: italic;
     font-stretch: ultra-expanded;
@@ -600,8 +600,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Expanded-Bold.woff') format('woff'),
-         url('../fonts/GT-America-Expanded-Bold.woff2') format('woff2');
+    src: url('../fonts/GT-America-Expanded-Bold.woff2') format('woff2'),
+         url('../fonts/GT-America-Expanded-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-stretch: ultra-expanded;
@@ -609,8 +609,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Expanded-Black-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Expanded-Black-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Expanded-Black-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Expanded-Black-Italic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
     font-stretch: ultra-expanded;
@@ -618,8 +618,8 @@
 
 @font-face {
     font-family: 'GT-America';
-    src: url('../fonts/GT-America-Expanded-Black.woff') format('woff'),
-         url('../fonts/GT-America-Expanded-Black.woff2') format('woff2');
+    src: url('../fonts/GT-America-Expanded-Black.woff2') format('woff2'),
+         url('../fonts/GT-America-Expanded-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-stretch: ultra-expanded;
@@ -629,112 +629,112 @@
 
 @font-face {
     font-family: 'GT-America-Mono';
-    src: url('../fonts/GT-America-Mono-Ultra-Light.woff') format('woff'),
-         url('../fonts/GT-America-Mono-Ultra-Light.woff2') format('woff2');
+    src: url('../fonts/GT-America-Mono-Ultra-Light.woff2') format('woff2'),
+         url('../fonts/GT-America-Mono-Ultra-Light.woff') format('woff');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GT-America-Mono';
-    src: url('../fonts/GT-America-Mono-Ultra-Light-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Mono-Ultra-Light-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Mono-Ultra-Light-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Mono-Ultra-Light-Italic.woff') format('woff');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'GT-America-Mono';
-    src: url('../fonts/GT-America-Mono-Thin.woff') format('woff'),
-         url('../fonts/GT-America-Mono-Thin.woff2') format('woff2');
+    src: url('../fonts/GT-America-Mono-Thin.woff2') format('woff2'),
+         url('../fonts/GT-America-Mono-Thin.woff') format('woff');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GT-America-Mono';
-    src: url('../fonts/GT-America-Mono-Thin-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Mono-Thin-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Mono-Thin-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Mono-Thin-Italic.woff') format('woff');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'GT-America-Mono';
-    src: url('../fonts/GT-America-Mono-Light.woff') format('woff'),
-         url('../fonts/GT-America-Mono-Light.woff2') format('woff2');
+    src: url('../fonts/GT-America-Mono-Light.woff2') format('woff2'),
+         url('../fonts/GT-America-Mono-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GT-America-Mono';
-    src: url('../fonts/GT-America-Mono-Light-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Mono-Light-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Mono-Light-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Mono-Light-Italic.woff') format('woff');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'GT-America-Mono';
-    src: url('../fonts/GT-America-Mono-Regular.woff') format('woff'),
-         url('../fonts/GT-America-Mono-Regular.woff2') format('woff2');
+    src: url('../fonts/GT-America-Mono-Regular.woff2') format('woff2'),
+         url('../fonts/GT-America-Mono-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GT-America-Mono';
-    src: url('../fonts/GT-America-Mono-Regular-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Mono-Regular-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Mono-Regular-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Mono-Regular-Italic.woff') format('woff');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'GT-America-Mono';
-    src: url('../fonts/GT-America-Mono-Medium.woff') format('woff'),
-         url('../fonts/GT-America-Mono-Medium.woff2') format('woff2');
+    src: url('../fonts/GT-America-Mono-Medium.woff2') format('woff2'),
+         url('../fonts/GT-America-Mono-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GT-America-Mono';
-    src: url('../fonts/GT-America-Mono-Medium-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Mono-Medium-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Mono-Medium-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Mono-Medium-Italic.woff') format('woff');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'GT-America-Mono';
-    src: url('../fonts/GT-America-Mono-Bold.woff') format('woff'),
-         url('../fonts/GT-America-Mono-Bold.woff2') format('woff2');
+    src: url('../fonts/GT-America-Mono-Bold.woff2') format('woff2'),
+         url('../fonts/GT-America-Mono-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GT-America-Mono';
-    src: url('../fonts/GT-America-Mono-Bold-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Mono-Bold-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Mono-Bold-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Mono-Bold-Italic.woff') format('woff');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'GT-America-Mono';
-    src: url('../fonts/GT-America-Mono-Black.woff') format('woff'),
-         url('../fonts/GT-America-Mono-Black.woff2') format('woff2');
+    src: url('../fonts/GT-America-Mono-Black.woff2') format('woff2'),
+         url('../fonts/GT-America-Mono-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'GT-America-Mono';
-    src: url('../fonts/GT-America-Mono-Black-Italic.woff') format('woff'),
-         url('../fonts/GT-America-Mono-Black-Italic.woff2') format('woff2');
+    src: url('../fonts/GT-America-Mono-Black-Italic.woff2') format('woff2'),
+         url('../fonts/GT-America-Mono-Black-Italic.woff') format('woff');
     font-weight: 900;
     font-style: italic;
 }
@@ -2439,15 +2439,6 @@ body{
   opacity: 1;
   animation: swipe 8.8s ease-in-out infinite; /* Adjusted total animation duration */
   will-change: transform, opacity;
-}
-
-@keyframes swipe {
-  0%, 25% {
-    transform: translateY(0%); /* In view */
-  }
-  27.27%, 100% {
-    transform: translateY(100%); /* Move out of view */
-  }
 }
 
 #date {

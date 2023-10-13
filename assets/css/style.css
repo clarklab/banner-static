@@ -97,15 +97,6 @@ body{
   will-change: transform, opacity;
 }
 
-@keyframes swipe {
-  0%, 25% {
-    transform: translateY(0%); /* In view */
-  }
-  27.27%, 100% {
-    transform: translateY(100%); /* Move out of view */
-  }
-}
-
 #date {
   animation-delay: 0s;
 }
