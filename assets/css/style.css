@@ -7,11 +7,11 @@
 
 body{
   @apply m-0 p-0 ot-ss03 selection:bg-purple-100 selection:text-purple-800;
-  font-family: 'GT America', sans-serif; 
+  font-family: 'GT-America', sans-serif; 
 }
 
 .gt{
-  font-family: 'GT America', sans-serif;
+  font-family: 'GT-America', sans-serif;
 }
 
 .font-ultra-condensed{
@@ -31,7 +31,7 @@ body{
 }
 
 .font-mono{
-  font-family: "GT America Mono", monospace;
+  font-family: "GT-America-Mono", monospace;
 }
 
 .font-times{
