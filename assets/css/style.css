@@ -5,9 +5,8 @@
 @tailwind utilities; 
 
 
-
 body{
-  @apply m-0 p-0 selection:bg-purple-100 selection:text-purple-800;
+  @apply m-0 p-0 ot-ss03 selection:bg-purple-100 selection:text-purple-800;
   font-family: 'GT America', sans-serif; 
 }
 

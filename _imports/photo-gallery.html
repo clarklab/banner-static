@@ -1,0 +1,124 @@
+<div class="block-photo-gallery !px-0 lg:!px-4 mx-auto">
+
+<div class="scroller snap-mandatory snap-x relative w-full flex lg:gap-1 overflow-x-auto scroll-smooth">
+
+<div class="photo aspect-4-3 w-screen lg:w-[calc(100%-2rem)] snap-center snap-always shrink-0">
+    <img class="aspect-4-3 w-screen object-cover object-top-center" src="https://www.thebaltimorebanner.com/resizer/Sf3-wJaqGD3X2OBqLXBSAtcp0ME=/1440x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/baltimorebanner/V7BGZZQXKJACNLELPK7YNY3ZNI.JPG" alt="Attendees congregate along Charles Street at Artscape in Baltimore on Friday. (Craig Hudson/ The Baltimore Banner)">
+</div>
+
+<div class="photo aspect-4-3 w-screen lg:w-[calc(100%-2rem)] snap-center snap-always shrink-0">
+    <img class="aspect-4-3 w-screen object-cover object-top-center" src="https://www.thebaltimorebanner.com/resizer/PA2h7O9Hba77I_Z7FoiS3JpQcDY=/1440x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/baltimorebanner/R4EYEYAJWZHJREW5DCSIUET3DE.jpg" alt="Ben Stone take a photo of his daughter, Margalit Stone, 2, in a light fixture outside of the Blinkatorium by Baltimore artist Scott Pennington at Artscape in Baltimore, MD on September 22, 2023. (Craig Hudson / The Baltimore Banner)">
+</div>
+
+<div class="photo aspect-4-3 w-screen lg:w-[calc(100%-2rem)] snap-center snap-always shrink-0">
+    <img class="aspect-4-3 w-screen object-cover object-top-center" src="https://www.thebaltimorebanner.com/resizer/OakkLI6mM5X2DJmABTpcRD-PU3E=/1440x1440/filters:format(jpg):quality(70):focal(264x157:274x167)/cloudfront-us-east-1.images.arcpublishing.com/baltimorebanner/KZYZSOLIRJD2XFAVEW5CA4AKCY.JPG" alt="Anderson .Paak performs during Artscape. (Craig Hudson / The Baltimore Banner)">
+</div>
+
+<div class="photo aspect-4-3 w-screen lg:w-[calc(100%-2rem)] snap-center snap-always shrink-0">
+    <img class="aspect-4-3 w-screen object-cover object-top-center" src="https://www.thebaltimorebanner.com/resizer/Urz-o4cAZapPEaV2fUNzyej2fbQ=/1440x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/baltimorebanner/FL7BUHW4TFE43G6CCIDVUDE5CM.JPG" alt="Artscape attendees check out the Blinkatorium by Baltimore artist Scott Pennington at Artscape in Baltimore, MD on September 22, 2023. (Craig Hudson / The Baltimore Banner)">
+</div>
+
+</div>
+
+<div class="meta flex flex-col pt-4 gap-2 lg:gap-4">
+<div class="indicators lg:hidden order-1 flex gap-1 items-center justify-center"></div>
+<div class="arrows order-2 hidden lg:inline-block">
+  <button class="prev w-12 h-12 border hover:text-purple inline-block">←</button><button class="next w-12 h-12 border border-l-0 hover:text-purple inline-block">→</button>
+</div>
+<div class="captions order-3 lg:order-1 font-condensed font-light text-black-500 leading-tight px-4 lg:px-0"></div>
+</div>
+</div>
+
+
+<script>
+  
+document.addEventListener("DOMContentLoaded", function() {
+
+    // Function to set the active dot and caption for a gallery based on the current scroll position
+    function setActiveDotAndCaption(indicators, captions, index) {
+        indicators.querySelectorAll('.dot').forEach((dot, i) => {
+            dot.classList[i === index ? 'add' : 'remove']('!bg-purple');
+        });
+        
+        captions.querySelectorAll('.caption').forEach((caption, i) => {
+            caption.style.display = i === index ? 'block' : 'none';
+        });
+    }
+
+    // Function to smoothly scroll to a particular image in the gallery
+    function snapTo(scroller, index) {
+        let newX = index * scroller.offsetWidth;
+        scroller.scrollTo({
+            top: 0,
+            left: newX,
+            behavior: 'smooth'
+        });
+    }
+
+    // Main logic for handling each gallery
+    document.querySelectorAll('.block-photo-gallery').forEach(container => {
+        const scroller = container.querySelector('.scroller');
+        const indicators = container.querySelector('.indicators');
+        const captions = container.querySelector('.captions');
+        const nextButton = container.querySelector('.next');
+        const prevButton = container.querySelector('.prev');
+        const images = scroller.querySelectorAll('.photo img');
+
+        const numOfImages = images.length;
+
+        // Initialize indicator dots and captions for each image in the gallery
+        images.forEach((img, i) => {
+            // For dots
+            const dot = document.createElement('div');
+            dot.classList.add('dot', 'w-2', 'h-2', 'bg-purple-100', 'rounded-full');
+            if(i === 0) dot.classList.add('!bg-purple'); // The first dot is active by default
+            indicators.appendChild(dot);
+            
+            // For captions
+            const caption = document.createElement('div');
+            caption.classList.add('caption');
+            
+            // Add count span
+            const countSpan = document.createElement('span');
+            countSpan.classList.add('count', 'hidden', 'lg:inline-block');
+            countSpan.textContent = `${i+1}/${numOfImages} · `;
+            caption.appendChild(countSpan);
+            
+            // Add the alt text
+            const textNode = document.createTextNode(` ${img.alt}`);
+            caption.appendChild(textNode);
+            
+            caption.style.display = i === 0 ? 'block' : 'none';  // Show the first caption by default
+            captions.appendChild(caption);
+        });
+
+        // Add a scroll event to update the active dot and caption as the gallery is scrolled
+        scroller.addEventListener('scroll', () => {
+            // Determine the index of the image currently in view based on scroll position
+            let index = Math.round(scroller.scrollLeft / scroller.offsetWidth);
+            setActiveDotAndCaption(indicators, captions, index);
+        });
+
+        // Add click event to the next button to advance the gallery to the next image
+        nextButton.addEventListener('click', () => {
+            let newIndex = Math.round(scroller.scrollLeft / scroller.offsetWidth) + 1;
+            // Prevent advancing beyond the last image
+            if(newIndex < numOfImages) {
+                snapTo(scroller, newIndex);
+            }
+        });
+
+        // Add click event to the prev button to move the gallery to the previous image
+        prevButton.addEventListener('click', () => {
+            let newIndex = Math.round(scroller.scrollLeft / scroller.offsetWidth) - 1;
+            // Prevent going back before the first image
+            if(newIndex >= 0) {
+                snapTo(scroller, newIndex);
+            }
+        });
+    });
+});
+
+
+
+</script>
