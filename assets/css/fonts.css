@@ -766,6 +766,19 @@
     font-feature-settings: 'kern' 1, 'ss03' 1;
 }
 
+.ot-ss02 {
+    font-feature-settings: 'kern' 1, 'ss02' 1;
+}
+
+.ot-ss01 {
+    font-feature-settings: 'kern' 1, 'ss01' 1;
+}
+
 .font-caslon{
     font-family: 'Libre Caslon Text', serif;
+}
+
+.arrows{
+    @apply ot-ss03;
+    font-stretch: ultra-condensed;
 }
