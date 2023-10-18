@@ -1,0 +1,79 @@
+<div class="block-hat block-hat-offer block-hat-offer-large fixed flex flex-col lg:flex-row lg:items-center gap-6 pr-8 w-full lg:w-3/4 bg-white text-black bottom-14 lg:bottom-1/2 text-center lg:text-left left-0 lg:left-1/2 right-0 lg:right-auto p-4 lg:p-0 translate-y-full lg:translate-y-[100vh] lg:-translate-x-1/2 transition-transform transform-gpu delay-2000 ease-in-out duration-500  lg:border-black lg:border-3 lg:drop-shadow-hard z-10" data-replace="{ 'translate-y-full lg:translate-y-[100vh]' : 'translate-y-0 lg:translate-y-1/2' }">
+
+    <img class="pt-6 max-w-full lg:w-1/2" src="assets/images/art-offer-hat.png" width="767" height="563" alt="">
+	
+    <div class="content bg-white lg:w-1/2 flex flex-col gap-4 lg:pt-6">
+	<p class="font-black font-expanded text-3xl md:text-4xl 2xl:text-5xl">Get The <br class="hidden xl:block" />Banner <br class="xl:hidden" />for only $1.</p>
+	<p class="font-light font-expanded text-black lg:text-xl mb-2 lg:mb-0">Six months. Newsletter. Mobile app.</p>
+
+	<div class="actions flex flex-col lg:flex-grow items-center lg:items-start gap-2 font-expanded">
+	<a href="#" class="bg-orange text-white font-black p-3 inline-block">Get The Banner for $1</a>
+	<a href="#" class="font-light text-sm flex"> <span class="pr-2">or</span> <span class="underline decoration-[1.5px] underline-offset-2 decoration-orange font-medium">Sign in</span></a>
+	</div>
+
+    </div>
+
+	<a href="#" class="close absolute top-0 right-0 p-2 lg:p-4">
+		<span class="material-symbols-sharp font-light text-black-500">close</span>
+	</a>
+    
+
+</div>
+
+<div class="shade fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-80 lg:bg-gradient-to-r from-purple-800 to-orange z-0 opacity-0 transition-opacity delay-2000 duration-500"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    /**
+     * Swaps out classes on a given element based on a mapping of oldClass: newClass.
+     * 
+     * @param {HTMLElement} element - The HTML element to modify.
+     * @param {Object} classMapping - An object mapping of oldClass: newClass.
+     */
+    function replaceElementClasses(element, classMapping) {
+        for (let key in classMapping) {
+            // Split classes by spaces (to account for multiple classes)
+            let oldClasses = key.split(' ');
+            let newClasses = classMapping[key].split(' ');
+
+            // Check if the element contains all of the old classes
+            if (oldClasses.every(cls => element.classList.contains(cls))) {
+                // Remove all old classes
+                oldClasses.forEach(cls => element.classList.remove(cls));
+
+                // Add new classes
+                newClasses.forEach(cls => element.classList.add(cls));
+            }
+        }
+    }
+
+    // Function to handle class replacement for elements with the "data-replace" attribute.
+    let replacers = document.querySelectorAll('[data-replace]');
+    for (let i = 0; i < replacers.length; i++) {
+        let replaceClasses = JSON.parse(replacers[i].dataset.replace.replace(/'/g, '"'));
+        replaceElementClasses(replacers[i], replaceClasses);
+    }
+
+    // Adjust the opacity of the .shade element when the replaceElementClasses happens
+    let shadeElement = document.querySelector('.shade');
+    if (shadeElement) {
+        shadeElement.classList.replace('opacity-0', 'opacity-90');
+    }
+
+    // Get all close buttons
+    var closeButtons = document.querySelectorAll('.close');
+
+    // Add event listener to each close button
+    closeButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            this.parentNode.classList.add('hidden');
+            
+            // Hide the .shade element when any close button is clicked
+            if (shadeElement) {
+                shadeElement.classList.replace('opacity-90', 'hidden');
+            }
+        });
+    });
+});
+
+</script>

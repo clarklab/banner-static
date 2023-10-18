@@ -41,7 +41,7 @@ module.exports = {
     'purple-400': '#d867ff',
     'purple-500': '#bd00ff',
     'purple-70': '#f5edff',
-    'purple-700': '#3c0088',
+    'purple-700': '#520BC4',
     'purple-800': '#270b4a',
     'red': '#ff0000',
     'tinted-gray-100': '#eaedf5',
@@ -59,6 +59,9 @@ module.exports = {
         borderColor: {
             DEFAULT: '#d9d9d9',
         },
+        borderWidth: {
+            '3': '3px',
+        },
         height: {
           'screen-bars': 'calc(100vh - 90px)',
           'half-screen': 'calc(50vh - 20px)',
@@ -66,10 +69,19 @@ module.exports = {
         boxShadow: {
           'inner': 'inset 0 0 8px 0 rgb(0 0 0 / 0.05)',
         },
+        transitionDelay: {
+          '2000': '2000ms',
+        },
         aspectRatio: {
           'video-vertical': '9 / 14',
           '4-3': '4 / 3',
           '3-4': '3 / 4',
+        },
+        translate: {
+          '-screen-y': '-100vh',
+        },
+        dropShadow: {
+          'hard': '6px 6px 0 black',
         },
      }
   },
