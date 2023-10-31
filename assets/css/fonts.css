@@ -778,7 +778,7 @@
     font-family: 'Libre Caslon Text', serif;
 }
 
-.arrows{
+.arrows, .arrow{
     @apply ot-ss03;
     font-stretch: ultra-condensed;
 }
