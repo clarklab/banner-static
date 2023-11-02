@@ -1310,6 +1310,10 @@ video {
     position: relative;
 }
 
+.sticky {
+    position: sticky;
+}
+
 .-left-1\/4 {
     left: -25%;
 }
@@ -1368,6 +1372,22 @@ video {
 
 .top-1\/3 {
     top: 33.333333%;
+}
+
+.right-2 {
+    right: 0.5rem;
+}
+
+.right-1 {
+    right: 0.25rem;
+}
+
+.right-16 {
+    right: 4rem;
+}
+
+.right-12 {
+    right: 3rem;
 }
 
 .-z-10 {
@@ -1702,6 +1722,14 @@ video {
 
 .w-screen {
     width: 100vw;
+}
+
+.w-32 {
+    width: 8rem;
+}
+
+.w-20 {
+    width: 5rem;
 }
 
 .\!max-w-3xl {
@@ -2103,6 +2131,14 @@ video {
     border-top-width: 4px;
 }
 
+.border-r-\[20px\] {
+    border-right-width: 20px;
+}
+
+.border-r-\[28px\] {
+    border-right-width: 28px;
+}
+
 .border-black {
     --tw-border-opacity: 1;
     border-color: rgb(0 0 0 / var(--tw-border-opacity));
@@ -2198,6 +2234,11 @@ video {
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-80 {
     --tw-bg-opacity: 0.8;
 }
@@ -2225,6 +2266,18 @@ video {
 .from-white {
     --tw-gradient-from: #ffffff var(--tw-gradient-from-position);
     --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-orange {
+    --tw-gradient-from: #ff4019 var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(255 64 25 / 0) var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-red {
+    --tw-gradient-from: #ff0000 var(--tw-gradient-from-position);
+    --tw-gradient-to: rgb(255 0 0 / 0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -2416,6 +2469,10 @@ video {
 
 .pt-8 {
     padding-top: 2rem;
+}
+
+.pr-32 {
+    padding-right: 8rem;
 }
 
 .text-center {
@@ -3222,6 +3279,14 @@ body{
 
 @media (min-width: 1024px) {
 
+    .lg\:absolute {
+        position: absolute;
+    }
+
+    .lg\:relative {
+        position: relative;
+    }
+
     .lg\:bottom-1\/2 {
         bottom: 50%;
     }
@@ -3244,6 +3309,14 @@ body{
 
     .lg\:top-14 {
         top: 3.5rem;
+    }
+
+    .lg\:top-\[266px\] {
+        top: 266px;
+    }
+
+    .lg\:top-\[106px\] {
+        top: 106px;
     }
 
     .lg\:order-1 {

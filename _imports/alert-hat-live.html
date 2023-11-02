@@ -1,0 +1,64 @@
+<div class="block-hat block-hat-alert block-hat-alert-live fixed h-14 flex items-center pr-8 lg:pr-14 w-full bg-black text-white bottom-14 lg:bottom-auto lg:top-14 left-0 right-0 p-2 translate-y-full overflow-hidden lg:-translate-y-full transition-transform transform-gpu delay-2000 ease-in-out duration-500" data-replace="{ 'translate-y-full lg:-translate-y-full' : 'translate-y-0' }">
+    
+    <div class="scroller overflow-x-scroll whitespace-nowrap pr-8 md:pr-0">
+
+    <a href="#" class="inline-block slant-clip px-2 bg-red text-white italic uppercase font-normal text-sm mr-2">LIVE</a>
+    <a href="#" class="section mr-2 pl-4 relative">
+        <span class="absolute flex block h-2 w-2 top-1.5 left-0">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-red"></span>
+        </span>
+        Baltimore road closures and parking restrictions to know this week <span class="arrows inline-block text-white font-medium">↗</span></a>
+
+    </div>
+
+    <a href="#" class="close absolute top-1/2 -translate-y-1/2 right-1 p-4 z-10 leading-none bg-black">
+        <span class="material-symbols-sharp font-light text-white leading-none">close</span>
+    </a>
+
+    <div class="absolute w-8 bg-gradient-to-l from-black shade right-12 top-0 bottom-0 pointer-events-none z-0">&nbsp;</div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    /**
+     * Swaps out classes on a given element based on a mapping of oldClass: newClass.
+     * 
+     * @param {HTMLElement} element - The HTML element to modify.
+     * @param {Object} classMapping - An object mapping of oldClass: newClass.
+     */
+    function replaceElementClasses(element, classMapping) {
+        for (let key in classMapping) {
+            // Split classes by spaces (to account for multiple classes)
+            let oldClasses = key.split(' ');
+            let newClasses = classMapping[key].split(' ');
+
+            // Check if the element contains all of the old classes
+            if (oldClasses.every(cls => element.classList.contains(cls))) {
+                // Remove all old classes
+                oldClasses.forEach(cls => element.classList.remove(cls));
+
+                // Add new classes
+                newClasses.forEach(cls => element.classList.add(cls));
+            }
+        }
+    }
+
+    // Function to handle class replacement for elements with the "data-replace" attribute.
+    let replacers = document.querySelectorAll('[data-replace]');
+    for (let i = 0; i < replacers.length; i++) {
+        let replaceClasses = JSON.parse(replacers[i].dataset.replace.replace(/'/g, '"'));
+        replaceElementClasses(replacers[i], replaceClasses);
+    }
+
+    // Get all close buttons
+    var closeButtons = document.querySelectorAll('.close');
+
+    // Add event listener to each close button
+    closeButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            this.parentNode.classList.add('hidden');
+        });
+    });
+});
+</script>

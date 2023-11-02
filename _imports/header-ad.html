@@ -1,0 +1,75 @@
+<sergey-import src="ad-zone-topper" />
+
+<header role="banner" class="bg-black text-white">
+
+  <nav class="wrapper gt font-normal px-4 flex justify-between items-center lg:hidden">
+   <a class="inline-block" href="index.html"><img src="assets/images/logo-wordmark.svg" width="200"></a>
+
+   <sergey-import src="charm" />
+
+  </nav>
+
+  <nav class="bottom fixed lg:relative z-50 bg-white bottom-0 lg:bottom-auto left-0 right-0 flex items-center gap-4 justify-between">
+    
+    <div class="logo w-14 h-14 bg-black flex items-center justify-center flex-none">
+      <a href="index.html"><img src="assets/images/logo-character.svg" width="22"></a>
+    </div>
+
+    <a class="hidden lg:inline-block lg:flex-grow" href="index.html"><img src="assets/images/logo-wordmark-black.svg" width="200"></a>
+
+    <div class="hidden lg:inline-block">
+    <sergey-import src="charm" />
+    </div>
+
+    <div class="cta flex-none">
+      <a href="#" class="block leading-none text-black font-medium underline decoration-1 decoration-orange hover:decoration-purple underline decoration-[1.5px] underline-offset-2">Subscribe for $1</a>
+    </div>
+
+    <div class="icons flex flex-grow lg:flex-none justify-end">
+      <a href="index.html" class="text-black inline-block w-14 h-14 flex items-center justify-center">
+        <span class="material-symbols-sharp leading-none text-2xl inline-block border-l pl-4">person</span>
+      </a>
+      <a href="index.html" class="menu-trigger text-black inline-block w-14 h-14 flex items-center justify-center">
+        <span class="menu-icon inline-block pr-2 block">
+        <img src="assets/images/icon-menu.svg" class="w-6 h-6" alt="">
+        </span>
+        <span class="close-icon hidden material-symbols-sharp leading-none text-2xl inline-block">close</span>
+      </a>
+    </div>
+
+  </nav>
+
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const menuTrigger = document.querySelector('.menu-trigger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIcon = document.querySelector('.menu-icon');
+    const closeIcon = document.querySelector('.close-icon');
+
+    menuTrigger.addEventListener('click', function(event) {
+
+        event.preventDefault(); // Prevent the default action
+
+        // Toggle classes on menu-trigger
+        this.classList.toggle('bg-black');
+        this.classList.toggle('open');
+
+        // Toggle classes on mobileMenu
+        if (mobileMenu) {
+            mobileMenu.classList.toggle('translate-x-0');
+            mobileMenu.classList.toggle('open');
+        }
+
+        // Swap classes for menu and close icons
+        if (menuIcon && closeIcon) {
+            menuIcon.classList.toggle('hidden');
+            menuIcon.classList.toggle('block');
+            closeIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('block');
+        }
+    });
+});
+
+</script>
