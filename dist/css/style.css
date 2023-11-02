@@ -1737,6 +1737,22 @@ video {
     max-width: 24rem;
 }
 
+.max-w-2xl {
+    max-width: 42rem;
+}
+
+.max-w-xl {
+    max-width: 36rem;
+}
+
+.max-w-lg {
+    max-width: 32rem;
+}
+
+.max-w-md {
+    max-width: 28rem;
+}
+
 .flex-none {
     flex: none;
 }
@@ -1788,6 +1804,16 @@ video {
 
 .translate-y-full {
     --tw-translate-y: 100%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-full {
+    --tw-translate-x: 100%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-0 {
+    --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1943,6 +1969,24 @@ video {
     margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.-space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(-0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(-0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.-space-x-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(-1rem * var(--tw-space-x-reverse));
+    margin-left: calc(-1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .divide-x > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-x-reverse: 0;
     border-right-width: calc(1px * var(--tw-divide-x-reverse));
@@ -1957,6 +2001,10 @@ video {
 
 .overflow-hidden {
     overflow: hidden;
+}
+
+.overflow-scroll {
+    overflow: scroll;
 }
 
 .overflow-x-auto {
@@ -2275,6 +2323,11 @@ video {
 .py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+}
+
+.px-1 {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
 }
 
 .pb-12 {
@@ -2620,6 +2673,10 @@ video {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.\@container {
+    container-type: inline-size;
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -2919,6 +2976,96 @@ body{
     display: block;
 }
 
+@container (min-width: 28rem) {
+
+    .\@md\:flex {
+        display: flex;
+    }
+
+    .\@md\:px-12 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .\@md\:text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+@container (min-width: 32rem) {
+
+    .\@lg\:flex {
+        display: flex;
+    }
+
+    .\@lg\:px-12 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@container (min-width: 36rem) {
+
+    .\@xl\:flex {
+        display: flex;
+    }
+
+    .\@xl\:px-12 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@container (min-width: 48rem) {
+
+    .\@3xl\:flex {
+        display: flex;
+    }
+
+    .\@3xl\:px-12 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@container (min-width: 64rem) {
+
+    .\@5xl\:flex {
+        display: flex;
+    }
+
+    .\@5xl\:flex-col {
+        flex-direction: column;
+    }
+
+    .\@5xl\:items-start {
+        align-items: flex-start;
+    }
+
+    .\@5xl\:justify-start {
+        justify-content: flex-start;
+    }
+
+    .\@5xl\:border-0 {
+        border-width: 0px;
+    }
+
+    .\@5xl\:px-12 {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .\@5xl\:pt-4 {
+        padding-top: 1rem;
+    }
+
+    .\@5xl\:text-2xl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
 @media (min-width: 640px) {
 
     .sm\:top-1\/2 {
@@ -2941,6 +3088,10 @@ body{
 }
 
 @media (min-width: 768px) {
+
+    .md\:top-14 {
+        top: 3.5rem;
+    }
 
     .md\:order-1 {
         order: 1;
@@ -2976,6 +3127,10 @@ body{
 
     .md\:w-12 {
         width: 3rem;
+    }
+
+    .md\:max-w-md {
+        max-width: 28rem;
     }
 
     .md\:grid-cols-3 {

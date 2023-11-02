@@ -16,6 +16,7 @@
     "sergey": "^0.0.13"
   },
   "devDependencies": {
+    "@tailwindcss/container-queries": "^0.1.1",
     "postcss-cli": "^10.1.0",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^12.0.1",
