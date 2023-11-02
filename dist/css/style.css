@@ -1437,11 +1437,6 @@ video {
     margin-bottom: 2rem;
 }
 
-.\!mx-4 {
-    margin-left: 1rem !important;
-    margin-right: 1rem !important;
-}
-
 .\!mb-4 {
     margin-bottom: 1rem !important;
 }
@@ -1928,6 +1923,12 @@ video {
 
 .gap-8 {
     gap: 2rem;
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2457,6 +2458,10 @@ video {
     text-transform: uppercase;
 }
 
+.capitalize {
+    text-transform: capitalize;
+}
+
 .italic {
     font-style: italic;
 }
@@ -2657,6 +2662,10 @@ body{
 
 .gt{
   font-family: 'GT-America', sans-serif;
+}
+
+.font-regular{
+  font-stretch: normal;
 }
 
 .font-ultra-condensed{
@@ -2906,6 +2915,10 @@ body{
     outline-offset: 2px;
 }
 
+.peer:focus ~ .peer-focus\:block {
+    display: block;
+}
+
 @media (min-width: 640px) {
 
     .sm\:top-1\/2 {
@@ -2931,11 +2944,6 @@ body{
 
     .md\:order-1 {
         order: 1;
-    }
-
-    .md\:\!mx-auto {
-        margin-left: auto !important;
-        margin-right: auto !important;
     }
 
     .md\:inline-block {
