@@ -2321,6 +2321,11 @@ video {
     padding-bottom: 1.5rem;
 }
 
+.px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .pb-12 {
     padding-bottom: 3rem;
 }
@@ -2403,6 +2408,10 @@ video {
 
 .pt-8 {
     padding-top: 2rem;
+}
+
+.pt-0 {
+    padding-top: 0px;
 }
 
 .text-center {
@@ -2943,6 +2952,11 @@ body{
 
 .docs:empty {
     display: none;
+}
+
+.block-social-embed iframe {
+    max-width: 32rem;
+    border-radius: 1rem;
 }
 
 .placeholder\:text-blue-100::-moz-placeholder {
@@ -3505,3 +3519,8 @@ body{
 .\[\&\:has\(strong\)\]\:font-light:has(strong) {
     font-weight: 300;
 }
+
+
+
+
+
