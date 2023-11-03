@@ -1,14 +1,10 @@
-<div class="block-hat block-hat-alert block-hat-alert-breaking fixed h-14 flex items-center pr-8 lg:pr-14 w-full bg-red text-white bottom-14 lg:bottom-auto lg:top-14 left-0 right-0 p-2 translate-y-full overflow-hidden lg:-translate-y-full transition-transform transform-gpu delay-2000 ease-in-out duration-500" data-replace="{ 'translate-y-full lg:-translate-y-full' : 'translate-y-0' }">
+<div class="block-hat block-hat-alert block-hat-alert-breaking fixed h-14 flex items-center w-full bg-red text-white bottom-14 lg:bottom-auto lg:top-14 left-0 right-0 p-2 translate-y-full overflow-hidden lg:-translate-y-full transition-transform transform-gpu delay-2000 ease-in-out duration-500" data-replace="{ 'translate-y-full lg:-translate-y-full' : 'translate-y-0' }">
     
     <div class="scroller overflow-x-scroll whitespace-nowrap">
     <p class="flex items-center leading-none"><span class="font-black font-ultra-expanded italic text-xl inline-block pr-4">BREAKING </span><span class="font-light font-regular text-lg">At least 4 shot at Morgan State Campus, according to BPD <span class="arrows inline-block pr-8 text-black font-medium">↗</span></p>
     </div>
 
-    <a href="#" class="close absolute top-1/2 -translate-y-1/2 right-1 p-4 z-10 leading-none bg-red">
-        <span class="material-symbols-sharp font-light text-white leading-none">close</span>
-    </a>
-
-    <div class="absolute w-16 bg-gradient-to-l from-red shade right-12 top-0 bottom-0 pointer-events-none z-0">&nbsp;</div>
+    <div class="absolute w-16 bg-gradient-to-l from-red shade right-0 top-0 bottom-0 pointer-events-none z-0">&nbsp;</div>
 </div>
 
 <script>
@@ -43,14 +39,5 @@ document.addEventListener("DOMContentLoaded", function() {
         replaceElementClasses(replacers[i], replaceClasses);
     }
 
-    // Get all close buttons
-    var closeButtons = document.querySelectorAll('.close');
-
-    // Add event listener to each close button
-    closeButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            this.parentNode.classList.add('hidden');
-        });
-    });
 });
 </script>
