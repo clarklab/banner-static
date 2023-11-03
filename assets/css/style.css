@@ -113,6 +113,29 @@ body{
 
 }
 
+/* section footer clip paths */
+
+.clip-path-fill{
+  padding-top:20%;
+  padding-bottom:20%;
+  margin-top:14%;
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+.clip-path-shard{
+    clip-path: polygon(0 10%, 100% 100%, 0% 100%);
+}
+
+@media (min-width:1024px){
+  .clip-path-fill{
+    padding-top:10%;
+    padding-bottom:10%;
+    margin-top:7%;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  }
+  .clip-path-shard{
+      clip-path: polygon(0 10%, 100% 100%, 0% 100%);
+  }
+}
 
 /* color stripe gradient stops, as far as I can tell, Tailwind will only allow one hard-stop and we needed more */
 .bg-gradient{
