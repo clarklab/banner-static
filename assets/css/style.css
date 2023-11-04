@@ -168,7 +168,7 @@ body{
 
 
   .block-social-embed iframe{
-    @apply rounded-2xl max-w-lg;
+    @apply rounded-xl max-w-lg;
   }
 
 
