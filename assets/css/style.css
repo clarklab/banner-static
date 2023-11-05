@@ -83,7 +83,7 @@ body{
 /* article body */
 
 .article-body{
-  @apply text-xl lg:px-0;
+  @apply text-xl font-light lg:px-0;
 
   > * {
     @apply mb-4 px-4 max-w-3xl mx-auto
@@ -91,7 +91,7 @@ body{
 
   > p, ul, ol {
     > a{
-       @apply text-purple-700 underline underline-offset-2 bg-purple-70 hover:text-purple;
+       @apply text-purple-700 underline underline-offset-2 bg-purple-70 hover:text-purple font-normal;
       }
     }
 
