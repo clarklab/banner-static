@@ -83,7 +83,7 @@ body{
 /* article body */
 
 .article-body{
-  @apply text-lg lg:px-0;
+  @apply text-xl lg:px-0;
 
   > * {
     @apply mb-4 px-4 max-w-3xl mx-auto
@@ -168,7 +168,11 @@ body{
 
 
   .block-social-embed iframe{
-    @apply rounded-xl max-w-lg;
+    @apply rounded-xl max-w-lg !border-solid !border-8 !border-white;
+  }
+
+  .tiktok-embed iframe{
+    @apply mx-auto !max-w-[325px];
   }
 
 
