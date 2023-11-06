@@ -2442,14 +2442,6 @@ video {
     padding-top: 2rem;
 }
 
-.pb-6 {
-    padding-bottom: 1.5rem;
-}
-
-.pb-10 {
-    padding-bottom: 2.5rem;
-}
-
 .text-left {
     text-align: left;
 }
@@ -3610,6 +3602,14 @@ body{
 
 .\[\&\:has\(strong\)\]\:font-light:has(strong) {
     font-weight: 300;
+}
+
+@media (min-width: 768px) {
+
+    .md\:\[\&\:has\(strong\)\]\:text-5xl:has(strong) {
+        font-size: 3rem;
+        line-height: 1;
+    }
 }
 
 
